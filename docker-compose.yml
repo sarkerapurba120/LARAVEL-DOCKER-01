@@ -1,0 +1,10 @@
+services:
+  laravel-docker:
+    container_name: laravel-doc-app
+    build: .
+    volumes:
+      - ./laravel-app:/var/www/html
+    ports:
+      - "9000:80"
+
+  
